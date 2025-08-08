@@ -1,0 +1,42 @@
+.user-message {
+  background: #e2f0d9;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.bot-response {
+  background: #dfefff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Animation */
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-in;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.6s ease-in-out;
+}
+
+.typing-indicator {
+  font-style: italic;
+  opacity: 0.6;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes slideUp {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes pulse {
+  0% {opacity: 0.6;}
+  50% {opacity: 1;}
+  100% {opacity: 0.6;}
+}
